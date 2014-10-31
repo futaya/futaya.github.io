@@ -1,0 +1,28 @@
+button.button1 {
+    /* 文字サイズを1.4emに指定 */
+font-size: 1.1em; 
+
+    /* 文字の太さをboldに指定 */
+    font-weight: bold;
+
+    /* 縦方向に10px、
+     * 横方向に30pxの余白を指定 */
+    padding: 2px 20px;
+
+    /* 背景色を濃い青色に指定 */
+/*    background-color: #248; */
+
+    /* 文字色を白色に指定 */
+    color: #000000;
+
+    /* ボーダーをなくす */
+/*    border-style: none; */
+
+border-radius: 12px;
+}
+
+button.button1:hover {
+    /* 背景色を明るい青色に指定 */
+/*    background-color: #24d; */
+opacity: 0.8;
+}

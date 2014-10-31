@@ -1,0 +1,411 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="all" href="button.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+     
+<script>
+  function playVideo() {
+    var video = document.getElementById("v");
+    video.play(); // ビデオの再生
+  }
+  function pauseVideo() {
+    var video = document.getElementById("v");
+    video.pause(); // ビデオの一時停止
+  }
+</script>
+
+
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+    <hgroup class="auto-fadein">
+
+
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>自己紹介</h2>
+    </hgroup>
+    <article>
+      <h3>名前 : 二谷聡志</h3>
+      <h3>E-mail : futaya@cpan.org</h3>
+      <h3>twitter : futaya</h3>
+      <br><br>
+      <ul>
+	<li>釧路高専の技術専門職員をしてます（情報系） 
+	</li>
+	<li>最近の発表とかシーズとかは http://www.kushiro-ct.ac.jp/futaya/
+        </li>
+	<li>普段の業務	    </li>
+	<ul>
+	  <li>実験室の管理</li>
+	  <li>演習用クライアントマシンのメンテ</li>
+	  <li>情報工学科の雑務<li>
+	  <li>演習での指導</li>
+	</ul>	
+      </ul>
+    </article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>最近の興味事</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>オープンハードウェア : Arduino,mbed </li>
+	<h3>Arduinoでこんなの作りました</h3>
+	<div align="center">
+	  <video id="v" width="640">
+	    <source src="20140721.mpeg">
+	      <source type="video/ogg" src="20140721.ogg">
+	  </video>
+	</div>
+	<br>
+	<button class="button1" onclick="playVideo();">再生</button>
+	<button class="button1" onclick="pauseVideo();">停止</button>
+      </ul>
+    </article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>科学技術コミュニケーションとは</h2>
+    </hgroup>
+    <article>
+<p>明確な定義があるわけではありませんが‥</p>
+
+<div style="border: 1px solid #ff3333;padding:30px;border-radius:20px;">
+科学や技術の専門家と一般の方を
+いろいろな手段や手法
+<br><br>
+<span style="font-size:larger;background-color:#ffffdd;padding:10px;border-radius:10px;">
+報道 / 教育 / イベント 等…</span>
+<br><br>
+でつなげる
+<br><br>
+<span style="font-size:larger;background-color:#ffffd1;padding:10px;border-radius:10px;">
+事 / 人  / 取り組みそのもの</span>
+<br><br>
+のこと
+</div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>オープンソースに関する文書をまとめました</h2>
+    </hgroup>
+    <article>
+
+
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Code Slide (Smaller Font)</h2>
+    </hgroup>
+    <article class="smaller">
+      <pre class="prettyprint" data-lang="javascript">
+// Say hello world until the user starts questioning
+// the meaningfulness of their existence.
+function helloWorld(world) {
+  for (var i = 42; --i &gt;= 0;) {
+    alert('Hello ' + String(world));
+  }
+}
+</pre>
+<pre class="prettyprint" data-lang="css">
+&lt;style&gt;
+  p { color: pink }
+  b { color: blue }
+&lt;/style&gt;
+</pre>
+<pre class="prettyprint" data-lang="html">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+  &lt;title>My Awesome Page&lt;/title>
+&lt;/head>
+&lt;body>
+  &lt;p&gt;Hello world&lt;/p&gt;
+&lt;body>
+&lt;/html>
+</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <aside class="note">
+      <section>
+        <ul>
+          <li>Point I wanted to make #1</li>
+          <li>Point I wanted to make #2</li>
+          <li>Point I wanted to make #3</li>
+          <li>Example <a href="#">link</a> in notes.</li>
+        </ul>
+        <p><b>Remember to say this tag line!</b></p>
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Slide with Speaker Notes</h2>
+    </hgroup>
+    <article>
+      <p>Press 'p' to toggle speaker notes.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <aside class="note">
+      <section>
+        <ul>
+          <li>See this amazing link: <a href="http://www.google.com">link</a>.</li>
+        </ul>
+        <p><b>Remember to say this tag line!</b></p>
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Presenter Mode</h2>
+    </hgroup>
+    <article>
+      <p>Add <code><a href="?presentme=true" target="_self">?presentme=true</a></code> to the URL to enabled presenter mode.
+      This setting is sticky, meaning refreshing the page will persist presenter
+      mode.</p>
+      <p>Hit <code><a href="?presentme=false" target="_self">?presentme=false</a></code> to disable presenter mode.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Slide with Image</h2>
+    </hgroup>
+    <article>
+      <img src="images/chart.png" class="reflect" alt="Description" title="Description">
+      <footer class="source">source: place source info here</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Slide with Image (Centered horz/vert)</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/barchart.png" alt="Description" title="Description">
+      <footer class="source">source: place source info here</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Table Option A</h2>
+      <h3>Subtitle Placeholder</h3>
+    </hgroup>
+    <article>
+      <table>
+        <tr>
+          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
+        </tr>
+        <tr>
+          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
+        </tr>
+        <tr>
+          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+        </tr>
+        <tr>
+          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+        </tr>
+        <tr>
+          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+        </tr>
+        <tr>
+          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+        </tr>
+      </table>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Table Option A (Smaller Text)</h2>
+      <h3>Subtitle Placeholder</h3>
+    </hgroup>
+    <article class="smaller">
+      <table>
+        <tr>
+          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
+        </tr>
+        <tr>
+          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
+        </tr>
+        <tr>
+          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+        </tr>
+        <tr>
+          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+        </tr>
+        <tr>
+          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+        </tr>
+        <tr>
+          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+        </tr>
+      </table>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Table Option B</h2>
+      <h3>Subtitle Placeholder</h3>
+    </hgroup>
+    <article>
+      <table class="rows">
+        <tr>
+          <th>Header 1</th><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td>
+        </tr>
+        <tr>
+          <th>Header 2</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+        </tr>
+        <tr>
+          <th>Header 3</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+        </tr>
+        <tr>
+          <th>Header 4</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+        </tr>
+        <tr>
+          <th>Header 5</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+        </tr>
+      </table>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Slide Styles</h2>
+    </hgroup>
+    <article class="smaller">
+      <div class="columns-2">
+        <ul>
+          <li class="red">class="red"</li>
+          <li class="red2">class="red2"</li>
+          <li class="red3">class="red3"</li>
+          <li class="blue">class="blue"</li>
+          <li class="blue2">class="blue2"</li>
+          <li class="blue3">class="blue3"</li>
+          <li class="green">class="green"</li>
+          <li class="green2">class="green2"</li>
+        </ul>
+        <ul>
+          <li class="green3">class="green3"</li>
+          <li class="yellow">class="yellow"</li>
+          <li class="yellow2">class="yellow2"</li>
+          <li class="yellow3">class="yellow3"</li>
+          <li class="gray">class="gray"</li>
+          <li class="gray2">class="gray2"</li>
+          <li class="gray3">class="gray3"</li>
+          <li class="gray4">class="gray4"</li>
+        </ul>
+      </div>
+      <div class="centered" style="margin-top:2em">
+        I am centered text with a <button>Button</button> and <button disabled>Disabled</button> button.
+      </div>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Segue Slide</h2>
+      <h3>Subtitle Placeholder</h3>
+    </hgroup>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(images/sky.jpg)">
+    <hgroup>
+      <h2 class="white">Full Image (with Optional Header)</h2>
+    </hgroup>
+    <footer class="source white">www.flickr.com/photos/25797459@N06/5438799763/</footer>
+  </slide>
+
+  <slide class="segue dark quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/google_developers_icon_128.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <q>
+        This is an example of quote text.
+      </q>
+      <div class="author">
+        Name<br>
+        Company
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Slide with Iframe</h2>
+    </hgroup>
+    <article>
+<!--      <iframe data-src="http://www.google.com/doodle4google/resources/history.html"></iframe> -->
+    </article>
+  </slide>
+
+  <slide>
+    <article>
+<!--       <iframe data-src="http://www.google.com/doodle4google/resources/history.html"></iframe> -->
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground">
+   <!-- <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside> -->
+    <article class="flexbox vleft auto-fadein">
+      <h2>&lt;Thank You!&gt;</h2>
+      <p>Important contact information goes here.</p>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+  <slide class="logoslide dark nobackground">
+<!--    <article class="flexbox vcenter">
+      <span><img src="images/google_developers_logo_white.png"></span>
+    </article>
+-->
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+</body>
+</html>
